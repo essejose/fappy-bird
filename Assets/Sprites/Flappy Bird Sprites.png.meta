@@ -1,24 +1,24 @@
 fileFormatVersion: 2
 guid: 812bfb701f8a2454883798b1d6a8e175
-timeCreated: 1476759273
+timeCreated: 1478650724
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Flappy Bird Sprites_0
-    21300002: Flappy Bird Sprites_1
-    21300004: Flappy Bird Sprites_2
+    21300002: Green Pipe
+    21300004: Flappy Bird  Blue 1
     21300006: Flappy Bird Sprites_3
     21300008: Flappy Bird Sprites_4
     21300010: Flappy Bird Sprites_6
-    21300012: Flappy Bird Sprites_7
+    21300012: Flappy Bird  Blue 2
     21300014: Flappy Bird Sprites_8
     21300016: Flappy Bird Sprites_9
-    21300018: Flappy Bird Sprites_12
+    21300018: Flappy Bird  Blue 3
     21300020: Flappy Bird Sprites_13
     21300022: Flappy Bird Sprites_14
     21300024: Flappy Bird Sprites_17
     21300026: Flappy Bird Sprites_18
-    21300028: Flappy Bird Sprites_20
+    21300028: Flappy Bird  Blue 4
     21300030: Flappy Bird Sprites_21
     21300032: Flappy Bird Sprites_22p
     21300034: Flappy Bird Sprites_23
@@ -99,26 +99,28 @@ TextureImporter:
         - {x: 41, y: -309.5}
         - {x: 41, y: 266.5}
         - {x: 44, y: 266.5}
-    - name: Flappy Bird Sprites_1
+    - name: Green Pipe
       rect:
         serializedVersion: 2
         x: 111
-        y: 462
+        y: 458
         width: 89
         height: 619
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -44.5, y: 309.5}
-        - {x: -44.5, y: 266.5}
-        - {x: -40.5, y: 266.5}
-        - {x: -40.5, y: -309.5}
-        - {x: 41.5, y: -309.5}
-        - {x: 41.5, y: 266.5}
-        - {x: 44.5, y: 266.5}
-        - {x: 44.5, y: 309.5}
-    - name: Flappy Bird Sprites_2
+      - - {x: 44.5, y: 309.5}
+        - {x: -44.5, y: 309.5}
+        - {x: -44.5, y: 270.5}
+        - {x: -40.5, y: 270.5}
+        - {x: -40.5, y: -305.5}
+        - {x: -38.5, y: -307.5}
+        - {x: 39.5, y: -307.5}
+        - {x: 41.5, y: -305.5}
+        - {x: 41.5, y: 270.5}
+        - {x: 44.5, y: 270.5}
+    - name: Flappy Bird  Blue 1
       rect:
         serializedVersion: 2
         x: 213
@@ -248,7 +250,7 @@ TextureImporter:
         - {x: 51.5, y: 65}
         - {x: 51.5, y: 82}
         - {x: 26.5, y: 122}
-    - name: Flappy Bird Sprites_7
+    - name: Flappy Bird  Blue 2
       rect:
         serializedVersion: 2
         x: 210
@@ -310,7 +312,7 @@ TextureImporter:
         - {x: 52.5, y: -29}
         - {x: 52.5, y: 3}
         - {x: 29.5, y: 37}
-    - name: Flappy Bird Sprites_12
+    - name: Flappy Bird  Blue 3
       rect:
         serializedVersion: 2
         x: 210
@@ -1961,25 +1963,26 @@ TextureImporter:
         - {x: 41, y: -309.5}
         - {x: 41, y: 266.5}
         - {x: 44, y: 266.5}
-    - name: Flappy Bird Sprites_20
+    - name: Flappy Bird  Blue 4
       rect:
         serializedVersion: 2
-        x: 208
-        y: 760
-        width: 103
-        height: 74
+        x: 207
+        y: 759
+        width: 105
+        height: 76
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -31.5, y: 37}
-        - {x: -51.5, y: 21}
-        - {x: -51.5, y: -15}
-        - {x: -39.5, y: -37}
-        - {x: 24.5, y: -37}
-        - {x: 51.5, y: -23}
-        - {x: 51.5, y: 0}
-        - {x: 26.5, y: 37}
+      - - {x: 32.5, y: 38}
+        - {x: -35.5, y: 38}
+        - {x: -52.5, y: 17}
+        - {x: -52.5, y: -31}
+        - {x: -30.5, y: -38}
+        - {x: 34.5, y: -38}
+        - {x: 39.5, y: -35}
+        - {x: 52.5, y: -17}
+        - {x: 52.5, y: 5}
     - name: Flappy Bird Sprites_21
       rect:
         serializedVersion: 2
