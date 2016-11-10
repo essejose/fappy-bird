@@ -1,39 +1,39 @@
 fileFormatVersion: 2
 guid: 812bfb701f8a2454883798b1d6a8e175
-timeCreated: 1478650724
+timeCreated: 1478738031
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Flappy Bird Sprites_0
+    21300000: Green Brown
     21300002: Green Pipe
     21300004: Flappy Bird  Blue 1
-    21300006: Flappy Bird Sprites_3
-    21300008: Flappy Bird Sprites_4
+    21300006: Flappy Bird  Red 1
+    21300008: Flappy Bird  Green 1
     21300010: Flappy Bird Sprites_6
     21300012: Flappy Bird  Blue 2
-    21300014: Flappy Bird Sprites_8
-    21300016: Flappy Bird Sprites_9
+    21300014: Flappy Bird  Red 2
+    21300016: Flappy Bird  Green 2
     21300018: Flappy Bird  Blue 3
-    21300020: Flappy Bird Sprites_13
-    21300022: Flappy Bird Sprites_14
+    21300020: Flappy Bird  Red 3
+    21300022: Flappy Bird  Green 3
     21300024: Flappy Bird Sprites_17
     21300026: Flappy Bird Sprites_18
     21300028: Flappy Bird  Blue 4
-    21300030: Flappy Bird Sprites_21
-    21300032: Flappy Bird Sprites_22p
-    21300034: Flappy Bird Sprites_23
+    21300030: Flappy Bird  Red 4
+    21300032: Flappy Bird  Green 4
+    21300034: Pause Menu
     21300036: Flappy Bird Sprites_24
     21300038: Flappy Bird Sprites_25
-    21300040: Flappy Bird Sprites_26
-    21300042: Flappy Bird Sprites_27
-    21300044: Flappy Bird Sprites_28
-    21300046: Flappy Bird Sprites_29
-    21300048: Flappy Bird Sprites_30
-    21300050: Flappy Bird Sprites_31
+    21300040: Medal Bronze
+    21300042: Medal Gold
+    21300044: Medal Silver
+    21300046: Pause Button
+    21300048: Resume Button
+    21300050: Ground
     21300052: Flappy Bird Sprites_32
-    21300054: Flappy Bird Sprites_33
-    21300056: Flappy Bird Sprites_34
-    21300058: Flappy Bird Sprites_35
+    21300054: Play Button
+    21300056: Leaderboard
+    21300058: Connect twitter
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -80,7 +80,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Flappy Bird Sprites_0
+    - name: Green Brown
       rect:
         serializedVersion: 2
         x: 19
@@ -140,7 +140,7 @@ TextureImporter:
         - {x: 50.5, y: -25}
         - {x: 50.5, y: 5}
         - {x: 29.5, y: 37}
-    - name: Flappy Bird Sprites_3
+    - name: Flappy Bird  Red 1
       rect:
         serializedVersion: 2
         x: 325
@@ -160,7 +160,7 @@ TextureImporter:
         - {x: 50, y: -21}
         - {x: 50, y: -3}
         - {x: 39, y: 24}
-    - name: Flappy Bird Sprites_4
+    - name: Flappy Bird  Green 1
       rect:
         serializedVersion: 2
         x: 439
@@ -271,7 +271,7 @@ TextureImporter:
         - {x: 52.5, y: -23}
         - {x: 52.5, y: -3}
         - {x: 45.5, y: 14}
-    - name: Flappy Bird Sprites_8
+    - name: Flappy Bird  Red 2
       rect:
         serializedVersion: 2
         x: 318
@@ -291,7 +291,7 @@ TextureImporter:
         - {x: 52.5, y: -18}
         - {x: 52.5, y: 9}
         - {x: 39.5, y: 37}
-    - name: Flappy Bird Sprites_9
+    - name: Flappy Bird  Green 2
       rect:
         serializedVersion: 2
         x: 432
@@ -334,7 +334,7 @@ TextureImporter:
         - {x: 45.5, y: -29}
         - {x: 52.5, y: -16}
         - {x: 52.5, y: 5}
-    - name: Flappy Bird Sprites_13
+    - name: Flappy Bird  Red 3
       rect:
         serializedVersion: 2
         x: 318
@@ -351,7 +351,7 @@ TextureImporter:
         - {x: 36.5, y: -37}
         - {x: 52.5, y: -23}
         - {x: 52.5, y: 37}
-    - name: Flappy Bird Sprites_14
+    - name: Flappy Bird  Green 3
       rect:
         serializedVersion: 2
         x: 432
@@ -1983,7 +1983,7 @@ TextureImporter:
         - {x: 39.5, y: -35}
         - {x: 52.5, y: -17}
         - {x: 52.5, y: 5}
-    - name: Flappy Bird Sprites_21
+    - name: Flappy Bird  Red 4
       rect:
         serializedVersion: 2
         x: 315
@@ -2004,7 +2004,7 @@ TextureImporter:
         - {x: 32, y: -34}
         - {x: 52, y: -18}
         - {x: 52, y: -1}
-    - name: Flappy Bird Sprites_22p
+    - name: Flappy Bird  Green 4
       rect:
         serializedVersion: 2
         x: 430
@@ -2025,7 +2025,7 @@ TextureImporter:
         - {x: 52.5, y: -17}
         - {x: 52.5, y: 12}
         - {x: 43.5, y: 33}
-    - name: Flappy Bird Sprites_23
+    - name: Pause Menu
       rect:
         serializedVersion: 2
         x: 581
@@ -2091,7 +2091,7 @@ TextureImporter:
         - {x: -82, y: -49}
         - {x: 82, y: -49}
         - {x: 82, y: 49}
-    - name: Flappy Bird Sprites_26
+    - name: Medal Bronze
       rect:
         serializedVersion: 2
         x: 209
@@ -2111,7 +2111,7 @@ TextureImporter:
         - {x: 49.5, y: -35.5}
         - {x: 50.5, y: -30.5}
         - {x: 50.5, y: 29.5}
-    - name: Flappy Bird Sprites_27
+    - name: Medal Gold
       rect:
         serializedVersion: 2
         x: 317
@@ -2128,7 +2128,7 @@ TextureImporter:
         - {x: 51, y: -50.5}
         - {x: 51, y: 45.5}
         - {x: 45, y: 50.5}
-    - name: Flappy Bird Sprites_28
+    - name: Medal Silver
       rect:
         serializedVersion: 2
         x: 425
@@ -2147,7 +2147,7 @@ TextureImporter:
         - {x: 51, y: -41}
         - {x: 51, y: 44}
         - {x: 32, y: 51}
-    - name: Flappy Bird Sprites_29
+    - name: Pause Button
       rect:
         serializedVersion: 2
         x: 542
@@ -2162,7 +2162,7 @@ TextureImporter:
         - {x: -42, y: -42}
         - {x: 42, y: -42}
         - {x: 42, y: 42}
-    - name: Flappy Bird Sprites_30
+    - name: Resume Button
       rect:
         serializedVersion: 2
         x: 660
@@ -2177,7 +2177,7 @@ TextureImporter:
         - {x: -31.5, y: -34.5}
         - {x: 31.5, y: -34.5}
         - {x: 31.5, y: 34.5}
-    - name: Flappy Bird Sprites_31
+    - name: Ground
       rect:
         serializedVersion: 2
         x: 23
@@ -2207,7 +2207,7 @@ TextureImporter:
         - {x: -103, y: -34.5}
         - {x: 103, y: -34.5}
         - {x: 103, y: 34.5}
-    - name: Flappy Bird Sprites_33
+    - name: Play Button
       rect:
         serializedVersion: 2
         x: 242
@@ -2231,7 +2231,7 @@ TextureImporter:
         - {x: 97, y: -75.5}
         - {x: 108, y: -68.5}
         - {x: 119, y: -57.5}
-    - name: Flappy Bird Sprites_34
+    - name: Leaderboard
       rect:
         serializedVersion: 2
         x: 510
@@ -2256,7 +2256,7 @@ TextureImporter:
         - {x: 105.5, y: -73.5}
         - {x: 128.5, y: -57.5}
         - {x: 128.5, y: 47.5}
-    - name: Flappy Bird Sprites_35
+    - name: Connect twitter
       rect:
         serializedVersion: 2
         x: 54
