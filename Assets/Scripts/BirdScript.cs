@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class BirdScript : MonoBehaviour {
 
@@ -18,6 +19,8 @@ public class BirdScript : MonoBehaviour {
 
     public bool isAlive;
 
+    private Button flapButton;
+
     void Awake()
     {
         if(instance == null)
@@ -25,6 +28,9 @@ public class BirdScript : MonoBehaviour {
             instance = this;
         }
         isAlive = true;
+
+        flapButton = GameObject.FindGameObjectWithTag("FlapButton").GetComponent<Button>();
+        flapButton.onClick.AddListener(() => FlapTheBird());
     }
 
 	// Use this for initialization
@@ -39,7 +45,7 @@ public class BirdScript : MonoBehaviour {
         {
             Vector2 temp = transform.position;
             temp.x += forwardSpeed * Time.deltaTime;
-            transform.position = temp;
+             transform.position = temp;
             if (didFlap)
             {
                 didFlap = false;
@@ -47,10 +53,23 @@ public class BirdScript : MonoBehaviour {
                 anim.SetTrigger("Flap");
             }
         }
+        if(myRigiBody.velocity.y >= 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            float angle = 0;
+            angle = Mathf.Lerp(0, -90, -myRigiBody.velocity.y /8);
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
 	}
 
     public void FlapTheBird()
     {
         didFlap = true;
+
+     
+
     }
 }
