@@ -29,7 +29,7 @@ public class BGCollector : MonoBehaviour {
             }
         }
 
-        for (int i = 0; i < grounds.Length; i++)
+        for (int i = 1; i < grounds.Length; i++)
         {
             if (lastGroundX < grounds[i].transform.position.x)
             {
