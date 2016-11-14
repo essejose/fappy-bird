@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: f9d275c90a576ea4787f8e19465216fc
+timeCreated: 1479123800
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: plane red 1
+    21300002: planes red 3
+    21300004: planes red 2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: plane red 1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31, y: 36.5}
+        - {x: -24, y: 36.5}
+        - {x: -26, y: 28.5}
+        - {x: -24, y: 25.5}
+        - {x: -19, y: 21.5}
+        - {x: -24, y: 25.5}
+        - {x: -41, y: 32.5}
+        - {x: -44, y: 25.5}
+        - {x: -44, y: -9.5}
+        - {x: -24, y: -33.5}
+        - {x: -3, y: -36.5}
+        - {x: 26, y: -36.5}
+        - {x: 44, y: -23.5}
+        - {x: 44, y: 14.5}
+        - {x: 34, y: 33.5}
+    - name: planes red 3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 147
+        width: 88
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 36.5}
+        - {x: -26, y: 28.5}
+        - {x: -24, y: 25.5}
+        - {x: -19, y: 21.5}
+        - {x: -24, y: 25.5}
+        - {x: -41, y: 32.5}
+        - {x: -44, y: 28.5}
+        - {x: -44, y: -16.5}
+        - {x: -19, y: -36.5}
+        - {x: 41, y: -36.5}
+        - {x: 43, y: -35.5}
+        - {x: 44, y: -29.5}
+        - {x: 44, y: 20.5}
+        - {x: 32, y: 36.5}
+    - name: planes red 2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 439
+        width: 88
+        height: 73
+      alignment: 9
+      pivot: {x: -0.63291425, y: 10.278123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75.69646, y: -677.303}
+        - {x: 73.69646, y: -685.303}
+        - {x: 75.69646, y: -688.303}
+        - {x: 80.69646, y: -692.303}
+        - {x: 75.69646, y: -688.303}
+        - {x: 70.69646, y: -686.303}
+        - {x: 55.696457, y: -684.303}
+        - {x: 55.696457, y: -723.303}
+        - {x: 63.696457, y: -750.303}
+        - {x: 143.69646, y: -750.303}
+        - {x: 143.69646, y: -683.303}
+        - {x: 136.69646, y: -677.303}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
