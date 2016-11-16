@@ -27,6 +27,9 @@ public class BirdScript : MonoBehaviour {
     [SerializeField]
     private AudioClip flapClick, pointClip, diedClip;
 
+
+    public int score;
+
     void Awake()
     {
         if(instance == null)
@@ -51,6 +54,7 @@ public class BirdScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
+        Debug.Log(score);
         if (isAlive)
         {
             Vector2 temp = transform.position;
@@ -107,6 +111,9 @@ public class BirdScript : MonoBehaviour {
         if(target.tag == "PipeHolder")
         {
             audioSouces.PlayOneShot(pointClip);
+            score++;
+            //Debug.Log(target.transform.Find("Green Pipe").position = new Vector3(0, 10, 0));
+            //target.transform.parent = new Vector3(10, 0, 0);  
         }
     }
 

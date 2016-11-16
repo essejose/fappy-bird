@@ -17,7 +17,7 @@ public class PipeCollector : MonoBehaviour {
         for (int i = 0; i < pipeHolder.Length; i++)
         {
             Vector3 temp = pipeHolder[i].transform.position;
-            temp.y = Random.Range(pipeMin, pipeMax);
+            temp.y = Random.Range(-3,0);
             pipeHolder[i].transform.position = temp;
 
 
@@ -29,14 +29,16 @@ public class PipeCollector : MonoBehaviour {
         {
             if(lastPipeX < pipeHolder[i].transform.position.x)
             {
+                
                 lastPipeX = pipeHolder[i].transform.position.x;
+                
             }
 
         }
 
     }
 
-    // Update is called once per frame
+  
     void OnTriggerEnter2D(Collider2D target) {
 
         Debug.Log(target.tag); 
