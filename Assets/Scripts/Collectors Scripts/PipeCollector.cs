@@ -6,8 +6,8 @@ public class PipeCollector : MonoBehaviour {
     private GameObject[] pipeHolder;
     private float distance = 2.5f;
     private float lastPipeX;
-    private float pipeMin = -1.5f;
-    private float pipeMax = 2.4f;
+    private float pipeMin = -.5f;
+    private float pipeMax = 2.8f;
 
 
 	// Use this for initialization
@@ -17,7 +17,7 @@ public class PipeCollector : MonoBehaviour {
         for (int i = 0; i < pipeHolder.Length; i++)
         {
             Vector3 temp = pipeHolder[i].transform.position;
-            temp.y = Random.Range(-3,0);
+            temp.y = Random.Range(pipeMin, pipeMax);
             pipeHolder[i].transform.position = temp;
 
 
@@ -38,8 +38,9 @@ public class PipeCollector : MonoBehaviour {
 
     }
 
-  
-    void OnTriggerEnter2D(Collider2D target) {
+
+    void OnTriggerEnter2D(Collider2D target)
+    {
 
         Debug.Log(target.tag); 
 	    if(target.tag == "PipeHolder")

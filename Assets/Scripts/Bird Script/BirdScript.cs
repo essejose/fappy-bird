@@ -54,7 +54,7 @@ public class BirdScript : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        Debug.Log(score);
+ 
         if (isAlive)
         {
             Vector2 temp = transform.position;
