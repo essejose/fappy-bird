@@ -21,7 +21,7 @@ public class CameraScript : MonoBehaviour {
 
     void SetCamerasX()
     {
-        CameraScript.offsetX = (Camera.main.transform.position.x - transform.position.x) - 1f;
+        CameraScript.offsetX = (Camera.main.transform.position.x - transform.position.x) - 2f;
     }
     void MoveTheCamera()
     {

@@ -7,7 +7,7 @@ public class PipeCollector : MonoBehaviour {
     private float distance = 2.5f;
     private float lastPipeX;
     private float pipeMin = -.5f;
-    private float pipeMax = 2.8f;
+    private float pipeMax = 3.8f;
 
 
 	// Use this for initialization
