@@ -38,4 +38,12 @@ public class GameController : MonoBehaviour {
             DontDestroyOnLoad(gameObject);
         }
     }
+
+    void isTheGameStartedForTheFirstTime()
+    {
+        if (!PlayerPrefs.HasKey("isTheGameStartedForTheFirstTime"))
+        {
+
+        }
+    }
 }
