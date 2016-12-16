@@ -15,7 +15,9 @@ public class GameController : MonoBehaviour {
     void Awake()
     {
         MakeSingleton();
-
+        PlayerPrefs.DeleteAll();
+        isTheGameStartedForTheFirstTime();
+       
     }
     // Use this for initialization
     void Start () {
@@ -45,9 +47,9 @@ public class GameController : MonoBehaviour {
         {
             PlayerPrefs.SetInt(HIGH_SCORE,0);
             PlayerPrefs.SetInt(SELECTED_BIRD, 0);
-            PlayerPrefs.SetInt(GREEN_BIRD, 0);
-            PlayerPrefs.SetInt(RED_BIRD, 0);
-            PlayerPrefs.SetInt(BLUE_BIRD, 0);
+            PlayerPrefs.SetInt(GREEN_BIRD, 1);
+            PlayerPrefs.SetInt(RED_BIRD,1);
+            PlayerPrefs.SetInt(BLUE_BIRD, 1);
             PlayerPrefs.SetInt("isTheGameStartedForTheFirstTime", 0);
 
         }

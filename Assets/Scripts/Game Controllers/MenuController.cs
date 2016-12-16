@@ -17,6 +17,7 @@ public class MenuController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         birds[GameController.instance.GetSelectedBird()].SetActive(true);
+        CheckIfBirdAreUnlocked();
 	}
 	
 	// Update is called once per frame
@@ -50,4 +51,41 @@ public class MenuController : MonoBehaviour {
         }
     }
 
+
+    public void ChangeBird()
+    {
+
+        Debug.Log(GameController.instance.GetSelectedBird());
+        if(GameController.instance.GetSelectedBird () == 0)
+        {
+            if (isGreenBirdUnlocked)
+            {
+                birds[0].SetActive(false);
+                GameController.instance.SetSelectdBird(1);
+                birds[GameController.instance.GetSelectedBird()].SetActive(true);
+
+
+            }
+        }else if(GameController.instance.GetSelectedBird() == 1)
+        {
+            if (isRedBirdUnlocked)
+            {
+                birds[1].SetActive(false);
+                GameController.instance.SetSelectdBird(2);
+                birds[GameController.instance.GetSelectedBird()].SetActive(true);
+
+            }
+            else
+            {
+                birds[1].SetActive(false);
+                GameController.instance.SetSelectdBird(0);
+                birds[GameController.instance.GetSelectedBird()].SetActive(true);
+            }
+        }else if(GameController.instance.GetSelectedBird() == 2)
+        {
+            birds[2].SetActive(false);
+            GameController.instance.SetSelectdBird(0);
+            birds[GameController.instance.GetSelectedBird()].SetActive(true);
+        }
+    }
 }
