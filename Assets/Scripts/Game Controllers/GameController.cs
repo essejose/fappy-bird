@@ -66,7 +66,7 @@ public class GameController : MonoBehaviour {
     {
         PlayerPrefs.SetInt(SELECTED_BIRD, selectedbird);
     }
-    public int GetSelectdBird()
+    public int GetSelectedBird()
     {
         return PlayerPrefs.GetInt(SELECTED_BIRD);
     }
