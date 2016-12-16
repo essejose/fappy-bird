@@ -43,7 +43,63 @@ public class GameController : MonoBehaviour {
     {
         if (!PlayerPrefs.HasKey("isTheGameStartedForTheFirstTime"))
         {
+            PlayerPrefs.SetInt(HIGH_SCORE,0);
+            PlayerPrefs.SetInt(SELECTED_BIRD, 0);
+            PlayerPrefs.SetInt(GREEN_BIRD, 0);
+            PlayerPrefs.SetInt(RED_BIRD, 0);
+            PlayerPrefs.SetInt(BLUE_BIRD, 0);
+            PlayerPrefs.SetInt("isTheGameStartedForTheFirstTime", 0);
 
         }
     }
+
+    public void SetHighscore(int score)
+    {
+        PlayerPrefs.SetInt(HIGH_SCORE, score);
+    }
+    public int GetHighscore()
+    {
+        return PlayerPrefs.GetInt(HIGH_SCORE);
+    }
+
+    public void SetSelectdBird(int selectedbird)
+    {
+        PlayerPrefs.SetInt(SELECTED_BIRD, selectedbird);
+    }
+    public int GetSelectdBird()
+    {
+        return PlayerPrefs.GetInt(SELECTED_BIRD);
+    }
+
+    public void UnlockGreenBird()
+    {
+        PlayerPrefs.SetInt(GREEN_BIRD, 1);
+    }
+
+    public int isGreenBirdUnlocked()
+    {
+        return PlayerPrefs.GetInt(GREEN_BIRD);
+    }
+
+    public void UnlockRedBird()
+    {
+        PlayerPrefs.SetInt(RED_BIRD, 1);
+    }
+
+    public int isRedBirdUnlocked()
+    {
+        return PlayerPrefs.GetInt(RED_BIRD);
+    }
+
+    public void UnlockBlueBird()
+    {
+        PlayerPrefs.SetInt(BLUE_BIRD, 1);
+    }
+
+    public int isBlueBirdUnlocked()
+    {
+        return PlayerPrefs.GetInt(BLUE_BIRD);
+    }
+
+
 }
