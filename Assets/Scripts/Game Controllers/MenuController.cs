@@ -51,7 +51,10 @@ public class MenuController : MonoBehaviour {
         }
     }
 
-
+    public void PlayGame()
+    {
+        SceneFader.instance.FadeIn("Gameplay");
+    }
     public void ChangeBird()
     {
 
