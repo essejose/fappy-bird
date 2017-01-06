@@ -99,6 +99,8 @@ public class BirdScript : MonoBehaviour {
                 isAlive = false;
                 anim.SetTrigger("Bird Died");
                 audioSouces.PlayOneShot(diedClip);
+
+                GamePlayController.instance.PlayerDiedShowScore(score);
             }
 
          
@@ -112,6 +114,7 @@ public class BirdScript : MonoBehaviour {
         {
             audioSouces.PlayOneShot(pointClip);
             score++;
+            GamePlayController.instance.SetScore(score);
             //Debug.Log(target.transform.Find("Green Pipe").position = new Vector3(0, 10, 0));
             //target.transform.parent = new Vector3(10, 0, 0);  
         }
