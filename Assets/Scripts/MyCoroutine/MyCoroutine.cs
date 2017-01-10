@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MyCoroutine : MonoBehaviour {
+public static  class MyCoroutine  {
+    public static IEnumerator WaitForRealSeconds(float time)
+    {
+        float start = Time.realtimeSinceStartup;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+        while(Time.realtimeSinceStartup < (start + time))
+        {
+            yield return null;
+        }
+    }
 }
