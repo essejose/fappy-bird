@@ -100,6 +100,7 @@ public class GamePlayController : MonoBehaviour {
 
     public void PlayerDiedShowScore(int score)
     {
+        AdsController.instance.ShowInterstitial();
         pausePanel.SetActive(true);
         gameOverText.gameObject.SetActive(true);
         scoreText.gameObject.SetActive(false);
@@ -142,6 +143,7 @@ public class GamePlayController : MonoBehaviour {
 
         restartGameButton.onClick.RemoveAllListeners();
         restartGameButton.onClick.AddListener(() => RestartGame());
+        
 
     }
 
