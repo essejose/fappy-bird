@@ -13,6 +13,7 @@ public class MenuController : MonoBehaviour {
     void Awake()
     {
         MakeInstance();
+        LeaderboardsController.instance.ConnectGooglePlayGames();
     }
 	// Use this for initialization
 	void Start () {
@@ -54,6 +55,15 @@ public class MenuController : MonoBehaviour {
     public void PlayGame()
     {
         SceneFader.instance.FadeIn("Gameplay");
+    }
+
+    public void OpenLeaderboardsScoreUI()
+    {
+        LeaderboardsController.instance.OpenLeaderboardsScore();
+    }
+    public void conectPlatform()
+    {
+        LeaderboardsController.instance.ConnectGooglePlayGames();
     }
     public void ChangeBird()
     {
