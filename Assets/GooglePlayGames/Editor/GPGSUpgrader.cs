@@ -97,8 +97,8 @@ namespace GooglePlayGames.Editor
                 }
 
                 // remove the massive play services client lib
-               // string clientDir = "Assets/Plugins/Android/google-play-services_lib";
-                //GPGSUtil.DeleteDirIfExists(clientDir);
+                string clientDir = "Assets/Plugins/Android/google-play-services_lib";
+                GPGSUtil.DeleteDirIfExists(clientDir);
             }
 
             // Check that there is a AndroidManifest.xml file

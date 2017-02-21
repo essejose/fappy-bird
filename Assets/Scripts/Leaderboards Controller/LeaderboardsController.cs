@@ -16,8 +16,8 @@ public class LeaderboardsController : MonoBehaviour {
     }
 
     void Start()
-    { 
-        PlayGamesPlatform.Activate();
+    {
+       // StartCoroutine(SocialLogin());
     }
 
     void MakeSingleton()
@@ -33,33 +33,64 @@ public class LeaderboardsController : MonoBehaviour {
         }
     }
 
-    void OnLevelWasLoaded()
+    // void OnLevelWasLoaded()
+    //{
+    //ReportScore(GameController.instance.GetHighscore());
+    //}
+    IEnumerator SocialLogin()
     {
-        //ReportScore(GameController.instance.GetHighscore());
+
+        yield return null;
+
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+            // enables saving game progress.
+            .EnableSavedGames()
+                .Build();
+
+        PlayGamesPlatform.InitializeInstance(config);
+        // recommended for debugging:
+        PlayGamesPlatform.DebugLogEnabled = true;
+
+        yield return null;
+
+        // Activate the Google Play Games platform
+        PlayGamesPlatform.Activate();
+
+        yield return null;
+
+        // authenticate user:
+        Social.localUser.Authenticate(playAuthenticate);
+
     }
 
+    private void playAuthenticate(bool success)
+    {
+        Debug.Log("Authentication result " + success);
+    }
     public void ConnectGooglePlayGames()
     {
+
+        Debug.Log(Social.localUser.authenticated);
         /*if (Social.localUser.authenticated)
         {
-            Social.localUser.Authenticate((bool sucess) => {
+            Social.localUser.authenticate((bool sucess) => {
                
             });
         }*/
 
-        if (!Social.localUser.authenticated)
+       /* if (!Social.localUser.authenticated)
         {
             Social.localUser.Authenticate((bool sucess) => {
                 Debug.Log(sucess);
             });
-        }
+        }*/
            
 
     }
 
     public void OpenLeaderboardsScore()
     {
-        Social.ShowLeaderboardUI();
+     
         if (Social.localUser.authenticated)
         {
             PlayGamesPlatform.Instance.ShowLeaderboardUI(LEADERBOARDS_SCORE);
