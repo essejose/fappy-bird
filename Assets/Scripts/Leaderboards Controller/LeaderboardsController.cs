@@ -70,7 +70,7 @@ public class LeaderboardsController : MonoBehaviour {
     public void ConnectGooglePlayGames()
     {
 
-        Debug.Log(Social.localUser.authenticated);
+       // Debug.Log(Social.localUser.authenticated);
         /*if (Social.localUser.authenticated)
         {
             Social.localUser.authenticate((bool sucess) => {

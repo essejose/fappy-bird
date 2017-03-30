@@ -106,7 +106,10 @@ public class GamePlayController : MonoBehaviour {
         scoreText.gameObject.SetActive(false);
         endScore.text = "" + score;
 
-        if(score > GameController.instance.GetHighscore())
+        Debug.Log(GameController.instance.GetHighscore());
+        Debug.Log(!PlayerPrefs.HasKey("isTheGameStartedForTheFirstTimes"));
+         
+        if (score > GameController.instance.GetHighscore())
         {
             GameController.instance.SetHighscore(score);
  
