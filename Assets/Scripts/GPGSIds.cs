@@ -27,6 +27,7 @@ public static class GPGSIds
         public const string achievement_50_points = "CgkIn5nJuIQbEAIQAw"; // <GPGSID>
         public const string achievement_25_points = "CgkIn5nJuIQbEAIQAg"; // <GPGSID>
         public const string achievement_100_points = "CgkIn5nJuIQbEAIQBQ"; // <GPGSID>
+        public const string leaderboard_scoreboard = "CgkIn5nJuIQbEAIQBg"; // <GPGSID>
         public const string achievement_10_points = "CgkIn5nJuIQbEAIQAQ"; // <GPGSID>
         public const string achievement_i_think_you_fell = "CgkIn5nJuIQbEAIQBA"; // <GPGSID>
 

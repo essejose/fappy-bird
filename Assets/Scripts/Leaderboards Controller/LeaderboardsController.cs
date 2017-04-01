@@ -8,16 +8,25 @@ public class LeaderboardsController : MonoBehaviour {
 
     public static LeaderboardsController instance;
 
-    private const string LEADERBOARDS_SCORE = "CgkIn5nJuIQbEAIQBA ";
+    private const string LEADERBOARDS_SCORE = "CgkIn5nJuIQbEAIQBg";
 
     void Awake()
     {
         MakeSingleton();
+
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+    // enables saving game progress.
+    .EnableSavedGames()
+     
+    .RequireGooglePlus()
+    .Build();
+ 
+
     }
 
     void Start()
     {
-       // StartCoroutine(SocialLogin());
+         StartCoroutine(SocialLogin());
     }
 
     void MakeSingleton()
@@ -49,7 +58,7 @@ public class LeaderboardsController : MonoBehaviour {
 
         PlayGamesPlatform.InitializeInstance(config);
         // recommended for debugging:
-        PlayGamesPlatform.DebugLogEnabled = true;
+        //PlayGamesPlatform.DebugLogEnabled = true;
 
         yield return null;
 
@@ -70,27 +79,27 @@ public class LeaderboardsController : MonoBehaviour {
     public void ConnectGooglePlayGames()
     {
 
-       // Debug.Log(Social.localUser.authenticated);
-        /*if (Social.localUser.authenticated)
-        {
-            Social.localUser.authenticate((bool sucess) => {
-               
-            });
-        }*/
-
-       /* if (!Social.localUser.authenticated)
+        Debug.Log(Social.localUser.authenticated);
+        if (Social.localUser.authenticated)
         {
             Social.localUser.Authenticate((bool sucess) => {
                 Debug.Log(sucess);
             });
-        }*/
+        }
+
+        if (!Social.localUser.authenticated)
+        {
+            Social.localUser.Authenticate((bool sucess) => {
+                Debug.Log(sucess);
+            });
+        }
            
 
     }
 
     public void OpenLeaderboardsScore()
     {
-     
+        PlayGamesPlatform.Instance.ShowLeaderboardUI(LEADERBOARDS_SCORE);   
         if (Social.localUser.authenticated)
         {
             PlayGamesPlatform.Instance.ShowLeaderboardUI(LEADERBOARDS_SCORE);
