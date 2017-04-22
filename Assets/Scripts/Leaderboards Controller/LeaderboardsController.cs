@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections; 
-//using GooglePlayGames;
-//using GooglePlayGames.BasicApi;
+using GooglePlayGames;
+using GooglePlayGames.BasicApi;
 using UnityEngine.SocialPlatforms;
  
 public class LeaderboardsController : MonoBehaviour {
@@ -14,14 +14,14 @@ public class LeaderboardsController : MonoBehaviour {
     {
         MakeSingleton();
 
-        //PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
+        PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder()
         // enables saving game progress.
-        // .EnableSavedGames()
+         .EnableSavedGames()
 
-        // .RequireGooglePlus()
-        //.Build();
- 
+        .RequireGooglePlus()
+        .Build();
 
+        
     }
 
     void Start()
@@ -79,7 +79,7 @@ public class LeaderboardsController : MonoBehaviour {
     public void ConnectGooglePlayGames()
     {
 
-      /*  Debug.Log(Social.localUser.authenticated);
+        Debug.Log(Social.localUser.authenticated);
         if (Social.localUser.authenticated)
         {
             Social.localUser.Authenticate((bool sucess) => {
@@ -94,16 +94,16 @@ public class LeaderboardsController : MonoBehaviour {
             });
         }
            
-        */
+        
     }
 
     public void OpenLeaderboardsScore()
     {
-       /* PlayGamesPlatform.Instance.ShowLeaderboardUI(LEADERBOARDS_SCORE);   
+        PlayGamesPlatform.Instance.ShowLeaderboardUI(LEADERBOARDS_SCORE);   
         if (Social.localUser.authenticated)
         {
             PlayGamesPlatform.Instance.ShowLeaderboardUI(LEADERBOARDS_SCORE);
-        }*/
+        }
     }
 
     void ReportScore(int score)

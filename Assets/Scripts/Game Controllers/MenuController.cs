@@ -13,7 +13,7 @@ public class MenuController : MonoBehaviour {
     void Awake()
     {
         MakeInstance();
-        LeaderboardsController.instance.ConnectGooglePlayGames();
+       
     }
 	// Use this for initialization
 	void Start () {
